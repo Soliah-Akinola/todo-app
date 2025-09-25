@@ -1,7 +1,7 @@
-# 📝 React Todo App
+# 📝Typescript Todo App
 
-A fully functional and visually appealing Todo Application built with **React 19+, React Router, Tailwind CSS, TanStack Query**, and **React Aria**. This project is designed to be accessible, performant, and developer-friendly, showcasing modern frontend practices.
-
+A fully type-safe Todo Application built with TypeScript.
+This project demonstrates how to build a small, modular, and maintainable application using  TypeScript.
 ---
 
 ## ✨ Features
@@ -14,6 +14,7 @@ A fully functional and visually appealing Todo Application built with **React 19
 - 📦 **State management & caching** with TanStack Query
 - 📱 **Responsive design**
 - 🧪 **Error boundaries** and fallback UIs
+- ✅ **Strong typing with TypeScript**
 
 ---
 
@@ -29,7 +30,9 @@ A fully functional and visually appealing Todo Application built with **React 19
 
 npm create vite@latest todo-app -- --template react
 npm intsall
-npm install react-router-dom@7 @tanstack/react-query axios tailwindcss postcss autoprefixer @react-aria/button @react-aria/checkbox @react-aria/listbox @react-aria/textfield @react-aria/visually-hidden lucide-react
+npx ts-node src/index.ts
+npx tsc
+node dist/index.js
 npx tailwindcss init -p
 
 ## start the develpoment server
@@ -41,18 +44,14 @@ npm run dev
 
 Navigate to http://localhost:5173
 
-
 ## 🧱 Tech Stack & Architecture
 
 
-| Layer         | Tech Stack                                     |
-| ------------- | ---------------------------------------------- |
-| Frontend      | React 19, Vite, Tailwind CSS                   |
-| Routing       | React Router v7+                               |
-| State & Data  | TanStack Query (for data fetching & caching)   |
-| Forms/Modals  | React Aria, Tailwind Modal + Controlled Inputs |
-| UI Components | Custom + Utility-based styling (Tailwind)      |
-| APIs          | REST-style functions using Fetch/Axios         |
+Language: TypeScript
+
+Build Tool: tsc (TypeScript compiler)
+
+Runtime: Node.js
 
 
 ## Folder Structures
@@ -61,8 +60,8 @@ src/
 ├── api/             # API functions (fetchTodos, deleteTodo etc.)
 ├── components/      # Reusable UI components (TodoCard, Modal, etc.)
 ├── pages/           # Main pages (Home, TodoDetail)
-├── App.jsx          # Root component with routing
-├── main.jsx         # Entry file
+├── App.tsx          # Root component with routing
+├── main.tsx         # Entry file
 └── styles/          # Tailwind + Global styles (if any)
 
 
